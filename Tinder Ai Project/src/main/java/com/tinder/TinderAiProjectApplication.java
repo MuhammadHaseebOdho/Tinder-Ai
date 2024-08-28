@@ -28,6 +28,8 @@ public class TinderAiProjectApplication implements CommandLineRunner {
     }
 
     public void run(String... args){
+
+        conversationRepository.deleteAll();
         System.out.println("Command Line Runner");
         Profile profile=new Profile(
                 "1",
